@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <main class="tela">
-        
-    </main>
-    <script>
-       
-       exibirAsteriscos(10);
+//Criar uma função que exibe a quantidade de asteriscos '*'
+//existentes em uma determinada linha
+
+exibirAsteriscos(10);
 function exibirAsteriscos(linhas) {
 
 //  let asterisco = '';
@@ -30,6 +19,3 @@ function exibirAsteriscos(linhas) {
     console.log(index, asterisco)
 }
 }
-    </script>
-</body>
-</html>
