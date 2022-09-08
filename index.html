@@ -12,6 +12,29 @@
     </main>
     <script>
 
+<<<<<<< HEAD
+=======
+ function exibirMedia(array) {
+    let soma = 0;
+    for (let index = 0; index < array.length; index++) {
+        soma += array[index]
+    }
+    return soma/array.length
+ }
+ 
+ function condicionais(mediaDasNotas) {
+    let media = exibirMedia(mediaDasNotas);
+
+    if (media < 60) return 'E';
+    if (media < 70) return 'D';
+    if (media < 80) return 'C';
+    if (media < 90) return 'B';
+    return 'A';
+ }
+
+ console.log(condicionais(array))
+
+>>>>>>> 056e182ce93e6bfd6d9882b7693019c229b3a766
     </script>
 </body>
 </html>
