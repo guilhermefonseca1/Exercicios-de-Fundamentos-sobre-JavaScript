@@ -11,25 +11,24 @@
         
     </main>
     <script>
-contadorDeAsterisco(10)
+// Criar um objeto endereço que contém:
+//Rua, 
+//Cidade, 
+//CEP e 
+//uma função exibirEndereço(endereço)
 
-function contadorDeAsterisco(quantidadeDeAsteriscos) {
-    let asterisco = '';
-    for(let index = 1; index <= quantidadeDeAsteriscos; index++) {
-        asterisco += '+'
-        console.log(`index}`, asterisco)
-    }
+let endereco = {
+    Rua: 'dois',
+    Cidade: 'Contagem',
+    CEP: '32010',
 }
 
-    // function contadorDeAsterisco(quantidadeDeAsteriscos) {
-    //     let armazenOsAsteriscos = '';
-    //     for (let index = 0; index < quantidadeDeAsteriscos; index++) {
-    //         for (let asterisco = 0; asterisco <= index; asterisco++) {
-    //             armazenOsAsteriscos += '*'
-    //         }
-    //         console.log(index, armazenOsAsteriscos)
-    //     }
-    // }
+function exibirEndereco(endereco) {
+    for (let chave in endereco) 
+    console.log(`${chave}:`, endereco[chave])
+}
+
+console.log(exibirEndereco(endereco))
     </script>
 </body>
 </html>
