@@ -12,28 +12,21 @@
     </main>
     <script>
  
- //Criar um array de objetos chamado FaixaDePreços igual aquele usado no mercado livre
-//O tipo do objeto será faixaDePreço
-//Crie uma unção para instanciar esses objetos
+//O método 'find' retorna o valor do primeiro elemento do array
+//que satisfaz a condição desejada, caso contrário, ele retorna undefined
 
-// let faixaDePreco = [
-//     {tooltip: 'até R$700', minimo: 0, maximo: 700},
-//     {}]
-// console.log(faixaDePreco)
+//Encontre dentro do objeto 'marcas' o objeto chamado guilherme
 
-function faixaDePreco(tooltip, minimo, maximo) {
-    return {
-    tooltip,
-    minimo,
-    maximo
-    }
-}
+let marcas = [
+    {id: 1, nome: 'guilherme'},
+    {id: 2, nome: 'clara'},
+    {id: 3, nome: 'laura'},
+    ]
 
-let faixaDePreco2 = [
-    faixaDePreco('a',1,100)
-]
-console.log(faixaDePreco)
-console.log(faixaDePreco2)
+    const marca = marcas.find(function(marca) {
+        return marca.nome === 'clara';
+    })
+    console.log(marca)
     </script>
 </body>
 </html>
