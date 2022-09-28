@@ -13,6 +13,12 @@ let marcas = [
 //  marca.nome === 'clara'
 // ))
 
+// console.log(marcas.find(marcaNome =>
+//     marcaNome.nome === 'guilherme'))
 
-console.log(marcas.find(marcaNome =>
-    marcaNome.nome === 'guilherme'))
+const findMarcas = () => {
+    const retorno = marcas.find(({ nome }) => nome === 'clara')
+        console.log(retorno);
+    }
+
+findMarcas()
